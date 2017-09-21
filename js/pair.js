@@ -14,7 +14,7 @@ $($ => {
     let playerName = playerField.val();
 
 		// build list element
-		if (playerName == "") { //does not add to list if field empty
+		if (playerName === " " || playerName == "") { //does not add to list if field empty/ 1 accidental spacebar press
 
     } else {
 			let playerNameItem = $('<li />', { text: playerName });
