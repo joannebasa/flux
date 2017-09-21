@@ -1,9 +1,10 @@
 $($ => {
 	let playerForm = $("#playerForm");
 	let playerField = $("#inputAddPlayer");
-	let playerList = $("#playerList");
+	let playerList = $(".playerList");
 	let playerPairButton = $("#playerPairButton");
 	let pairedPlayers = $("#pairedPlayers");
+	let removePlayer = $("#removePlayer");
 
 	// add player to list
 	playerForm.on("submit", (e) => {
@@ -31,8 +32,8 @@ $($ => {
 	playerPairButton.on("click", () => {
 		pairedPlayers.empty();
 		let people = [];
-		//pushing items into array and displaying items in console
-		$("#playerList li").each(function() { people.push($(this).text()) });
+		//pushing items into array and displaying items
+		$(".playerList li").each(function() { people.push($(this).text()) });
 
 		// this assumes an even number of players
 		if (people.length % 2 !== 0) {
@@ -40,7 +41,7 @@ $($ => {
 			$("#morePlayers").append("You must have an even number of players. You currently have " + people.length + " to play.");
 
 		} else {
-
+			pairedPlayers.append("Players will compete as follows: ")
 			$("#morePlayers").empty(); //clears message once condition passes
 
 			let shuffle = people => {
@@ -68,6 +69,9 @@ $($ => {
 		}
 
 	});
-
+/**********************/
+  removePlayer.on("click", () => {
+		$(".playerList li:last").remove();
+	});
 
 });

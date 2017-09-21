@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <title>Table Tennis App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,26 +30,34 @@
         </div>
         <!-- /.container-fluid navbar -->
       </nav>
-      <div class="col-lg-6">
-        <div class="input-group">
-          <form id="playerForm">
-            <input type="text" class="form-control" placeholder="Joe Bloggs" id="inputAddPlayer">
-            <span class="input-group-btn">
-		          <button class="btn btn-primary" type="submit">Add Player</button>
-		        </span>
-          </form>
-        </div><!-- /input-group -->
-        <ul class="list-group" id="playerList">
+      <div class="input-group col-lg-8 front">
+        <h4>Type player's names here:</h4>
+        <p>
+          (one name per line)
+        </p>
+        <form id="playerForm">
+          <input type="text" class="form-control" placeholder="Joe Bloggs" id="inputAddPlayer">
+          <span class="input-group-btn buttons">
+	          <button class="btn btn-primary" type="submit">
+              Add Player
+            </button>
+	          <button class="btn btn-danger" type="button" id="removePlayer">
+              Delete Last Player
+            </button>
+            <button class="btn btn-success" id="playerPairButton">
+    		      Pair Up
+    		    </button>
+	        </span>
+        </form>
+      </div><!-- /input-group -->
+      <div class="lists">
+        <ul class="list-group playerList">
         </ul>
-        <button class="btn btn-success" id="playerPairButton">
-		      Pair Up
-		    </button>
         <ul id="pairedPlayers">
         </ul>
         <p id="morePlayers">
-      </div><!-- col -->
-    </div>
-    <!-- wrapper -->
+      </div><!-- lists -->
+    </div><!-- wrapper -->
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">

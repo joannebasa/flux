@@ -5,3 +5,18 @@ body {
 nav {
   width: 100%;
 }
+
+.front {
+  margin: 2rem;
+}
+
+.playerList, .lists {
+  margin: 0.5rem;
+  padding-left: 2rem;
+  margin-left: 1rem;
+
+}
+
+button {
+  margin: 0.25rem 0.5rem;
+}
