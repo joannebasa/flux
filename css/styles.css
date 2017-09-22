@@ -1,22 +1,35 @@
 body {
   background-color: lightGrey;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 nav {
   width: 100%;
 }
 
-.front {
-  margin: 2rem;
+.row {
+  padding: 1em;
 }
 
-.playerList, .lists {
-  margin: 0.5rem;
-  padding-left: 2rem;
-  margin-left: 1rem;
-
+h2 {
+  padding-left: 0.45em;
 }
 
-button {
-  margin: 0.25rem 0.5rem;
+.list {
+  margin: 1em;
+}
+
+.list li {
+  list-style-type: square;
+  font-size: 2em;
+}
+
+#pairedPlayers {
+  font-size: 1em;
+}
+
+footer h4 {
+  text-align: center;
 }

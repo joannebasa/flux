@@ -6,7 +6,7 @@ $($ => {
 	let pairedPlayers = $("#pairedPlayers");
 	let removePlayer = $("#removePlayer");
 
-	// add player to list
+	// Add player function && add player to list
 	playerForm.on("submit", (e) => {
     e.preventDefault(); // prevents default form behaviour
 
@@ -24,11 +24,15 @@ $($ => {
 
 			// add to list
 	    playerList.append(playerNameItem);
-			}
-
+		}
   });
 
-	//pair players
+	//Deletes last player from list
+  removePlayer.on("click", () => {
+		$(".playerList li:last").remove();
+	});
+
+	//Pair players function
 	playerPairButton.on("click", () => {
 		pairedPlayers.empty();
 		let people = [];
@@ -38,10 +42,10 @@ $($ => {
 		// this assumes an even number of players
 		if (people.length % 2 !== 0) {
 			$("#morePlayers").empty();
-			$("#morePlayers").append("You must have an even number of players. You currently have " + people.length + " to play.");
+			$("#morePlayers").append("<h3>You must have an even number of players.<br>You currently have " + people.length + " on the list.</h3>");
 
 		} else {
-			pairedPlayers.append("Players will compete as follows: ")
+			pairedPlayers.append("<h3>Players will compete as follows: </h3>")
 			$("#morePlayers").empty(); //clears message once condition passes
 
 			let shuffle = people => {
@@ -65,13 +69,10 @@ $($ => {
 				let matches = $('<li />', { text: games });
 				pairedPlayers.append(matches);
 			}
-
 		}
-
-	});
-/**********************/
-  removePlayer.on("click", () => {
-		$(".playerList li:last").remove();
 	});
 
+	//tooltips
+
+  $('[data-toggle="tooltip"]').tooltip();
 });

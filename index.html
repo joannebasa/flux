@@ -1,62 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Table Tennis App</title>
+    <title>Flux</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <div class="wrapper">
-      <nav class="navbar navbar-inverse" role="navigation">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-  	        <span class="sr-only">Toggle navigation</span>
-  	        <span class="icon-bar"></span>
-  	        <span class="icon-bar"></span>
-  	        <span class="icon-bar"></span>
-  	      </button>
-            <a class="navbar-brand" href="#">Table Tennis App</a>
-          </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-              <li><a href="#">Games</a></li>
-            </ul>
-          </div>
-          <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid navbar -->
+      <nav class="navbar navbar-inverse">
+        <a class="navbar-brand" href="#"><span><img src="img/pingpong.png" title="Ping Pong" alt="Ping Pong icon" width="25" height="25"> Flux</a></span>
       </nav>
-      <div class="input-group col-lg-8 front">
-        <h4>Type player's names here:</h4>
-        <p>
-          (one name per line)
-        </p>
+      <div class="container-fluid">
+        <h2>Enter player's name here:</h2>
         <form id="playerForm">
-          <input type="text" class="form-control" placeholder="Joe Bloggs" id="inputAddPlayer">
-          <span class="input-group-btn buttons">
-	          <button class="btn btn-primary" type="submit" id="add">
-              Add Player
-            </button>
-	          <button class="btn btn-danger" type="button" id="removePlayer">
-              Delete Last Player
-            </button>
-            <button class="btn btn-success" type="button" id="playerPairButton">
-    		      Pair Up
-    		    </button>
-	        </span>
+          <div class="form-group col-lg-6 col-md-6 col-sm-8 col-xs-12">
+            <input type="text" class="form-control input-lg" placeholder="Joe Bloggs" id="inputAddPlayer">
+            <p class="form-text text-muted">(one player at a time)</p>
+          </div>
+          <div class="btn-group col-lg-12 col-md-12 col-sm-12 col-xs-12 btn-group-lg">
+            <span><button class="btn btn-primary" type="submit" id="add" data-html="true" title="<b>Adds</b> player to the list." data-toggle="tooltip" data-placement="bottom">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i> Add</button></span>
+            <span><button class="btn btn-success" type="button" id="playerPairButton" data-html="true" title="<b>Pairs</b> players at random." data-toggle="tooltip" data-placement="bottom">
+              <i class="fa fa-random" aria-hidden="true"></i> Pair </button></span>
+            <span><button class="btn btn-danger" type="button" id="removePlayer" data-html="true" title="<b>Removes</b> the player at the bottom of the list." data-toggle="tooltip" data-placement="bottom">
+              <i class="fa fa-undo" aria-hidden="true"></i> Undo Last</button></span>
+          </div>
         </form>
-      </div><!-- /input-group -->
-      <div class="lists">
-        <ul class="list-group playerList">
-        </ul>
-        <ul id="pairedPlayers">
-        </ul>
-        <p id="morePlayers">
-      </div><!-- lists -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 list">
+          <ul class="list-group playerList">
+          </ul>
+          <ul id="pairedPlayers">
+          </ul>
+          <p id="morePlayers"></p>
+        </div><!-- lists -->
+      </div>
+      <footer class="navbar-fixed-bottom">
+        <h4><i class="fa fa-github" aria-hidden="true"></i>
+Github repository <a href="https://github.com/joannebasa/paddle" target="_blank">here</a>.</h4>
+        <h4>	&copy; Joanne Basa 2017 </h4>
+      </footer>
     </div><!-- wrapper -->
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
     </script>
