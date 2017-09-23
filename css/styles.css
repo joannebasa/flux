@@ -19,14 +19,11 @@ h2 {
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3;
-  margin-left: auto;
-  margin-right: auto;
 }
 
  .playerList li, #pairedPlayers li {
   list-style-type: none;
   font-size: 2em;
-  float: none !important;
 }
 
 /* Modal */
