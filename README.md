@@ -41,7 +41,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Thank You!
 
-* Thanks to my mentor Keir Moffatt (http://iamkeir.com/) for the being patient
+* Thanks to my mentor Keir Moffatt (http://iamkeir.com/) for being so patient with me
 * DevelopMe_ teachers - They are awesome! Check them out: https://developme.training/
 * My family back in the Philippines for always checking how it looks like on their devices
 * Thank you to my partner and our son - for keeping me awake when I need to code, and for keeping me going
