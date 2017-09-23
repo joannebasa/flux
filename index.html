@@ -32,13 +32,15 @@
             <input type="text" class="form-control input-lg" placeholder="Joe Bloggs" id="inputAddPlayer" />
             <p class="form-text text-muted">(one player at a time)</p>
           </div> <!-- col -->
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 btn-group-lg buttons">
-            <span><button class="btn btn-primary" type="submit" id="add" data-html="true" title="<b>Adds</b> player to the list." data-toggle="tooltip" data-placement="bottom">
-              <i class="fa fa-plus-circle" aria-hidden="true"></i> Add</button></span>
-            <span><button class="btn btn-success" type="button" id="playerPairButton" data-html="true" title="<b>Pairs</b> players at random." data-toggle="tooltip" data-placement="bottom">
-              <i class="fa fa-random" aria-hidden="true"></i> Pair </button></span>
-            <span><button class="btn btn-danger" type="button" id="removePlayer" data-html="true" title="<b>Removes</b> the player at the bottom of the list." data-toggle="tooltip" data-placement="bottom">
-              <i class="fa fa-undo" aria-hidden="true"></i> Undo Last</button></span>
+          <div class="row no-gutter">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 btn-group-lg buttons">
+              <span><button class="btn btn-primary" type="submit" id="add" data-html="true" title="<b>Adds</b> player to the list." data-toggle="tooltip" data-placement="bottom">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i> Add</button></span>
+              <span><button class="btn btn-success" type="button" id="playerPairButton" data-html="true" title="<b>Pairs</b> players at random." data-toggle="tooltip" data-placement="bottom">
+                <i class="fa fa-random" aria-hidden="true"></i> Pair </button></span>
+              <span><button class="btn btn-danger" type="button" id="removePlayer" data-html="true" title="<b>Removes</b> the player at the bottom of the list." data-toggle="tooltip" data-placement="bottom">
+                <i class="fa fa-undo" aria-hidden="true"></i> Undo Last</button></span>
+            </div>
           </div>
         </form>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mainList">
@@ -51,15 +53,15 @@
           <p id="morePlayers" class="list-group-item-danger"></p>
         </div><!-- pairedList -->
       </div><!-- container fluid -->
-      <nav class="navbar-bottom">
-        <div class="container">
+      <div class="container-fluid">
+        <footer>
           <h4><i class="fa fa-github" aria-hidden="true"></i>
             Github repository <a href="https://github.com/joannebasa/flux" target="_blank">here</a>.</h4>
           <h4>
             &copy; Joanne Basa 2017
           </h4>
-        </div>
-      </nav>
+        </footer>
+      </div>
     </div><!-- wrapper -->
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
     </script>
