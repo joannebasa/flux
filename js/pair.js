@@ -40,7 +40,7 @@ $($ => {
 		$(".playerList li").each(function() { people.push($(this).text()) });
 
 		// this assumes an even number of players
-		if (people.length % 2 !== 0) {
+		if (people.length % 2 !== 0 || people.length == 0) {
 			$("#morePlayers").empty();
 			$("#morePlayers").append("<h3>You must have an even number of players.<br>You currently have " + people.length + " on the list.</h3>");
 
