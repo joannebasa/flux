@@ -17,7 +17,7 @@ $($ => {
 		if (playerName === " " || playerName == "") { //does not add to list if field empty/ 1 accidental spacebar press
 
     } else {
-			let playerNameItem = $('<li />', { text: playerName });
+			let playerNameItem = $('<li/>', { text: playerName });
 
 	    //clear field between adds
 	    playerField.val("");
@@ -66,7 +66,7 @@ $($ => {
 			// add "vs" to every match
 			for (var i=0; i<paired.length; i=i+1) {
 				let games = paired[i][0] + " vs " + paired[i][1];
-				let matches = $('<li />', { text: games });
+				let matches = $('<li/>', { text: games });
 				pairedPlayers.append(matches);
 			}
 		}
