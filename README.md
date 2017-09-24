@@ -32,7 +32,7 @@ There is no need to reload this page when you see the red error message.
 
 ## Author
 
-* **Joanne Basa** -- DevelopMe_ Coding Fellowship Summer 2017 cohort
+* **Joanne Basa** -- DevelopMe_ Coding Fellowship Summer 2017 student
 
 
 ## License
