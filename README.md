@@ -6,7 +6,7 @@ This is a simple responsive application that can list player's names and randoml
 
 Clone the repository:
 
-* see documentation https://github.com/joannebasa/flux.git
+* see documentation https://help.github.com/articles/cloning-a-repository/
 
 ```
 git clone https://github.com/joannebasa/flux.git
