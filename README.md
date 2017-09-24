@@ -1,6 +1,6 @@
 # Flux
 
-This is a simple responsive application that can list player's names and randomise them.
+This is a simple responsive application that can list player's names and randomly pair them.
 
 ## How to download
 
