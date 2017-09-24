@@ -43,7 +43,7 @@ $($ => {
 		// this assumes an even number of players
 		if (people.length % 2 !== 0 || people.length == 0) {
 			$("#morePlayers").empty();
-			$("#morePlayers").append("<h3>You must have an even number of players.<br>You currently have " + people.length + " on the list.<br><strong>Add</strong> another <u>OR</u> <strong>undo</strong> last player then <strong>pair</strong> again.</h3>");
+			$("#morePlayers").append("<h3>You must have an even number of players.<br>You currently have " + people.length + " on the list.<br><strong>Add</strong> another <u>AND/OR</u> <strong>undo</strong> last player then <strong>pair</strong> again.</h3>");
 
 		} else {
 			pairedPlayers.append("<h3>Players will compete as follows: </h3>")
