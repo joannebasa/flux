@@ -8,7 +8,9 @@ Clone the repository:
 
 * see documentation https://github.com/joannebasa/flux.git
 
+```
 git clone https://github.com/joannebasa/flux.git
+```
 
 * Go to folder, right-click on the index.html file, open in your browser of choice
 
