@@ -1,7 +1,8 @@
 $($ => {
+
 	let playerForm = $("#playerForm");
 	let playerField = $("#inputAddPlayer");
-	let playerList = $(".playerList");
+	let playerList = $("#playerList");
 	let playerPairButton = $("#playerPairButton");
 	let pairedPlayers = $("#pairedPlayers");
 	let removePlayer = $("#removePlayer");
@@ -29,7 +30,7 @@ $($ => {
 
 	//Deletes last player from list
   removePlayer.on("click", () => {
-		$(".playerList li:last").remove();
+		$("#playerList li:last").remove();
 	});
 
 	//Pair players function
@@ -37,12 +38,12 @@ $($ => {
 		pairedPlayers.empty();
 		let people = [];
 		//pushing items into array and displaying items
-		$(".playerList li").each(function() { people.push($(this).text()) });
+		$("#playerList li").each(function() { people.push($(this).text()) });
 
 		// this assumes an even number of players
 		if (people.length % 2 !== 0 || people.length == 0) {
 			$("#morePlayers").empty();
-			$("#morePlayers").append("<h3>You must have an even number of players.<br>You currently have " + people.length + " on the list.</h3>");
+			$("#morePlayers").append("<h3>You must have an even number of players.<br>You currently have " + people.length + " on the list.<br><strong>Add</strong> another <u>OR</u> <strong>undo</strong> last player then <strong>pair</strong> again.</h3>");
 
 		} else {
 			pairedPlayers.append("<h3>Players will compete as follows: </h3>")
@@ -73,6 +74,5 @@ $($ => {
 	});
 
 	//tooltips
-
   $('[data-toggle="tooltip"]').tooltip();
 });
