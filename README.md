@@ -2,6 +2,17 @@
 
 This is a simple responsive application that can list player's names and randomise them.
 
+## How to download
+
+Clone the repository:
+
+* see documentation https://github.com/joannebasa/flux.git
+
+git clone https://github.com/joannebasa/flux.git
+
+* Go to folder, right-click on the index.html file, open in your browser of choice
+
+Alternatively, see Flux in action: http://jo.developme.training/
 
 ## Getting Started
 
